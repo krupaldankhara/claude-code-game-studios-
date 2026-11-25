@@ -1,0 +1,2816 @@
+{
+  "agents": [
+    {
+      "id": "accessibility-specialist",
+      "name": "Accessibility Specialist",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Quality & Accessibility",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 10,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "qa-lead",
+      "description": "Accessibility standards and assistive features — remapping, text scaling, colorblind modes, screen reader support.",
+      "mandate": "You are the Accessibility Specialist for an indie game project. Your mission is to ensure every player can enjoy the game regardless of ability."
+    },
+    {
+      "id": "ai-programmer",
+      "name": "AI Programmer",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Implements game AI — behavior trees, state machines, pathfinding, perception, decision-making, NPC and enemy behavior, AI debugging.",
+      "mandate": "You are an AI Programmer for an indie game project. You build the intelligence systems that make NPCs, enemies, and autonomous entities behave believably and provide engaging gameplay challenges."
+    },
+    {
+      "id": "analytics-engineer",
+      "name": "Analytics Engineer",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash",
+        "WebSearch"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Telemetry and analytics — event tracking, player behavior, A/B test frameworks, dashboard specification, data pipelines.",
+      "mandate": "You are an Analytics Engineer for an indie game project. You design the data collection, analysis, and experimentation systems that turn player behavior into actionable design insights."
+    },
+    {
+      "id": "art-director",
+      "name": "Art Director",
+      "tier": 2,
+      "tierLabel": "Department Lead",
+      "department": "Art & Visuals",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "WebSearch"
+      ],
+      "disallowedTools": [
+        "Bash"
+      ],
+      "reportsTo": "creative-director",
+      "description": "Owns visual identity — style guides, art bible, asset standards, color palettes, UI visual direction.",
+      "mandate": "You are the Art Director for an indie game project. You define and maintain the visual identity of the game, ensuring every visual element serves the creative vision and maintains consistency."
+    },
+    {
+      "id": "audio-director",
+      "name": "Audio Director",
+      "tier": 2,
+      "tierLabel": "Department Lead",
+      "department": "Audio",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "WebSearch"
+      ],
+      "disallowedTools": [
+        "Bash"
+      ],
+      "reportsTo": "creative-director",
+      "description": "Owns sonic identity — music direction, sound palette, audio implementation strategy, mix balance.",
+      "mandate": "You are the Audio Director for an indie game project. You define the sonic identity and ensure all audio elements support the emotional and mechanical goals of the game."
+    },
+    {
+      "id": "community-manager",
+      "name": "Community Manager",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Core",
+      "model": "sonnet",
+      "maxTurns": 10,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit"
+      ],
+      "disallowedTools": [
+        "Bash"
+      ],
+      "reportsTo": "lead-programmer",
+      "description": "Player-facing communication — patch notes, social posts, community updates, feedback collection, player bug triage, crisis communication.",
+      "mandate": "You are the Community Manager for a game project. You own all player-facing communication and community engagement."
+    },
+    {
+      "id": "creative-director",
+      "name": "Creative Director",
+      "tier": 1,
+      "tierLabel": "Director",
+      "department": "Executive Leadership",
+      "engine": "Core",
+      "model": "opus",
+      "maxTurns": 30,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "WebSearch"
+      ],
+      "disallowedTools": [
+        "Bash"
+      ],
+      "reportsTo": "Studio User",
+      "description": "Highest creative authority — vision, tone, aesthetic direction. Use when a decision affects game identity or department leads deadlock.",
+      "mandate": "You are the Creative Director for an indie game project. You are the final authority on all creative decisions. Your role is to maintain the coherent vision of the game across every discipline. You ground your decisions in player psychology, established design theory, and deep understanding of what makes games resonate"
+    },
+    {
+      "id": "devops-engineer",
+      "name": "Devops Engineer",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Core",
+      "model": "sonnet",
+      "maxTurns": 10,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Build pipelines, CI/CD configuration, version control workflow, branching strategy, automated test pipelines, deployment infrastructure.",
+      "mandate": "You are a DevOps Engineer for an indie game project. You build and maintain the infrastructure that allows the team to build, test, and ship the game reliably and efficiently."
+    },
+    {
+      "id": "economy-designer",
+      "name": "Economy Designer",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Game & UX Design",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit"
+      ],
+      "disallowedTools": [
+        "Bash"
+      ],
+      "reportsTo": "game-designer",
+      "description": "Resource economies — loot tables, sink/faucet analysis, progression curve calibration, economic balance.",
+      "mandate": "You are an Economy Designer for an indie game project. You design and balance all resource flows, reward structures, and progression systems to create satisfying long-term engagement without inflation or degenerate strategies."
+    },
+    {
+      "id": "engine-programmer",
+      "name": "Engine Programmer",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Core engine systems — rendering pipeline, physics, memory, resource loading, scene management, performance-critical framework code.",
+      "mandate": "You are an Engine Programmer for an indie game project. You build and maintain the foundational systems that all gameplay code depends on. Your code must be rock-solid, performant, and well-documented."
+    },
+    {
+      "id": "game-designer",
+      "name": "Game Designer",
+      "tier": 2,
+      "tierLabel": "Department Lead",
+      "department": "Game & UX Design",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "WebSearch"
+      ],
+      "disallowedTools": [
+        "Bash"
+      ],
+      "reportsTo": "creative-director",
+      "description": "Mechanical and systems design — core loops, progression, combat, economy, player-facing rules. Mechanics-level questions.",
+      "mandate": "You are the Game Designer for an indie game project. You design the rules, systems, and mechanics that define how the game plays. Your designs must be implementable, testable, and fun. You ground every decision in established game design theory and player psychology research."
+    },
+    {
+      "id": "gameplay-programmer",
+      "name": "Gameplay Programmer",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Implements designed mechanics as code — player systems, combat, interactive features, gameplay system code.",
+      "mandate": "You are a Gameplay Programmer for an indie game project. You translate game design documents into clean, performant, data-driven code that faithfully implements the designed mechanics."
+    },
+    {
+      "id": "godot-csharp-specialist",
+      "name": "Godot C# Specialist",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Godot",
+      "model": "sonnet",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Godot 4 C# quality — .NET patterns, attribute-based exports, signal delegates, async patterns, type-safe node access.",
+      "mandate": "You are the Godot C# Specialist for a Godot 4 project. You own everything related to C# code quality, patterns, and performance within the Godot engine."
+    },
+    {
+      "id": "godot-gdextension-specialist",
+      "name": "Godot GDExtension Specialist",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Godot",
+      "model": "sonnet",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Native code integration with Godot — GDExtension API, godot-cpp and godot-rust bindings, custom node types, the native boundary.",
+      "mandate": "You are the GDExtension Specialist for a Godot 4 project. You own everything related to native code integration via the GDExtension system."
+    },
+    {
+      "id": "godot-gdscript-specialist",
+      "name": "Godot GDScript Specialist",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Godot",
+      "model": "sonnet",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "GDScript code quality — static typing enforcement, signal architecture, coroutine patterns, GDScript idioms, typed and performant.",
+      "mandate": "You are the GDScript Specialist for a Godot 4 project. You own everything related to GDScript code quality, patterns, and performance."
+    },
+    {
+      "id": "godot-shader-specialist",
+      "name": "Godot Shader Specialist",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Godot",
+      "model": "sonnet",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Godot rendering customization — shading language, visual shaders, material setup, particle shaders, post-processing.",
+      "mandate": "You are the Godot Shader Specialist for a Godot 4 project. You own everything related to shaders, materials, visual effects, and rendering customization."
+    },
+    {
+      "id": "godot-specialist",
+      "name": "Godot Specialist",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Godot",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash",
+        "Agent"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Authority on Godot-specific patterns and APIs — node/scene architecture, signals, resources; guides GDScript vs C# vs GDExtension.",
+      "mandate": "You are the Godot Engine Specialist for a game project built in Godot 4. You are the team's authority on all things Godot."
+    },
+    {
+      "id": "lead-programmer",
+      "name": "Lead Programmer",
+      "tier": 2,
+      "tierLabel": "Department Lead",
+      "department": "Engineering",
+      "engine": "Core",
+      "model": "sonnet",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "technical-director",
+      "description": "Lead programmer — code-level architecture, coding standards, code review, API design, refactoring strategy, assigning work to specialist programmers.",
+      "mandate": "You are the Lead Programmer for an indie game project. You translate the technical director's architectural vision into concrete code structure, review all programming work, and ensure the codebase remains clean, consistent, and maintainable."
+    },
+    {
+      "id": "level-designer",
+      "name": "Level Designer",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Game & UX Design",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit"
+      ],
+      "disallowedTools": [
+        "Bash"
+      ],
+      "reportsTo": "game-designer",
+      "description": "Spatial design for levels and areas — encounter layouts, pacing, difficulty, layout planning, environmental storytelling.",
+      "mandate": "You are a Level Designer for an indie game project. You design spaces that guide the player through carefully paced sequences of challenge, exploration, reward, and narrative."
+    },
+    {
+      "id": "live-ops-designer",
+      "name": "Live Ops Designer",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Game & UX Design",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit"
+      ],
+      "disallowedTools": [
+        "Bash"
+      ],
+      "reportsTo": "game-designer",
+      "description": "Post-launch content — seasonal events, battle passes, content cadence, retention, engagement analytics. Keeps the game fresh.",
+      "mandate": "You are the Live Operations Designer for a game project. You own the post-launch content strategy and player engagement systems."
+    },
+    {
+      "id": "localization-lead",
+      "name": "Localization Lead",
+      "tier": 2,
+      "tierLabel": "Department Lead",
+      "department": "Production & Publishing",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "producer",
+      "description": "Internationalization architecture — i18n system design, string extraction workflows, locale testing, locale-specific issues, translation pipeline.",
+      "mandate": "You are the Localization Lead for an indie game project. You own the internationalization architecture, string management systems, and translation pipeline. Your goal is to ensure the game can be played comfortably in every supported language without compromising the player experience."
+    },
+    {
+      "id": "narrative-director",
+      "name": "Narrative Director",
+      "tier": 2,
+      "tierLabel": "Department Lead",
+      "department": "Narrative",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "WebSearch"
+      ],
+      "disallowedTools": [
+        "Bash"
+      ],
+      "reportsTo": "creative-director",
+      "description": "Story architecture, world-building, character design, dialogue strategy. Narrative structure and direction rather than writing individual lines.",
+      "mandate": "You are the Narrative Director for an indie game project. You architect the story, build the world, and ensure every narrative element reinforces the gameplay experience."
+    },
+    {
+      "id": "network-programmer",
+      "name": "Network Programmer",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Multiplayer networking — state replication, lag compensation, matchmaking, network protocol, netcode and bandwidth optimization.",
+      "mandate": "You are a Network Programmer for an indie game project. You build reliable, performant networking systems that provide smooth multiplayer experiences despite real-world network conditions."
+    },
+    {
+      "id": "performance-analyst",
+      "name": "Performance Analyst",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Performance analyst — profiling, bottlenecks, memory analysis, frame time investigation, recommends optimizations, tracks metrics over time.",
+      "mandate": "You are a Performance Analyst for an indie game project. You measure, analyze, and improve game performance through systematic profiling, bottleneck identification, and optimization recommendations."
+    },
+    {
+      "id": "producer",
+      "name": "Producer",
+      "tier": 1,
+      "tierLabel": "Director",
+      "department": "Executive Leadership",
+      "engine": "Core",
+      "model": "opus",
+      "maxTurns": 30,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash",
+        "WebSearch"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "Studio User",
+      "description": "Production concerns — sprint planning, milestone tracking, risk, scope, cross-department coordination when multiple departments must synchronize.",
+      "mandate": "You are the Producer for an indie game project. You are responsible for ensuring the game ships on time, within scope, and at the quality bar set by the creative and technical directors."
+    },
+    {
+      "id": "prototyper",
+      "name": "Prototyper",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Game & UX Design",
+      "engine": "Core",
+      "model": "sonnet",
+      "maxTurns": 25,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "game-designer",
+      "description": "Throwaway builds — concept prototypes after brainstorm to test an idea is fun before GDDs; vertical slices pre-production. Speed over standards.",
+      "mandate": "You are the Prototyper for an indie game project. Your job is to build things fast, learn what works, and throw the code away. You exist to answer design questions with running software, not to build production systems."
+    },
+    {
+      "id": "qa-lead",
+      "name": "QA Lead",
+      "tier": 2,
+      "tierLabel": "Department Lead",
+      "department": "Quality & Accessibility",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "producer",
+      "description": "Test strategy and process — test plan creation, bug severity assessment, regression planning, release quality gates, readiness evaluation.",
+      "mandate": "You are the QA Lead for an indie game project. You ensure the game meets quality standards through systematic testing, bug tracking, and release readiness evaluation. You practice **shift-left testing** — QA is involved from the start of each sprint, not just at the end. Testing is a **hard part of the Definition of Do"
+    },
+    {
+      "id": "qa-tester",
+      "name": "QA Tester",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Quality & Accessibility",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 60,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "qa-lead",
+      "description": "Writes test cases, bug reports, and checklists — test case generation, regression checklist creation, execution documentation.",
+      "mandate": "You are a QA Tester for an indie game project. You write thorough test cases and detailed bug reports that enable efficient bug fixing and prevent regressions. You also write automated test stubs and understand engine-specific test patterns — when a story needs a GDScript/C#/C++ test file, you can scaffold it."
+    },
+    {
+      "id": "release-manager",
+      "name": "Release Manager",
+      "tier": 2,
+      "tierLabel": "Department Lead",
+      "department": "Production & Publishing",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "producer",
+      "description": "Release pipeline — certification checklists, store submissions and page prep, platform requirements, version numbering, release-day coordination.",
+      "mandate": "You are the Release Manager for an indie game project. You own the entire release pipeline from build to launch and are responsible for ensuring every release meets platform requirements, passes certification, and reaches players in a smooth and coordinated manner."
+    },
+    {
+      "id": "security-engineer",
+      "name": "Security Engineer",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Protects against cheating, exploits, breaches — anti-cheat measures, secure save data and network comms, player privacy compliance.",
+      "mandate": "You are the Security Engineer for an indie game project. You protect the game, its players, and their data from threats."
+    },
+    {
+      "id": "sound-designer",
+      "name": "Sound Designer",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Game & UX Design",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 10,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit"
+      ],
+      "disallowedTools": [
+        "Bash"
+      ],
+      "reportsTo": "game-designer",
+      "description": "SFX specifications and spec sheets — audio event documentation, mixing parameters, sound category definitions.",
+      "mandate": "You are a Sound Designer for an indie game project. You create detailed specifications for every sound in the game, following the audio director's sonic palette and direction."
+    },
+    {
+      "id": "systems-designer",
+      "name": "Systems Designer",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Game & UX Design",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit"
+      ],
+      "disallowedTools": [
+        "Bash"
+      ],
+      "reportsTo": "game-designer",
+      "description": "Detailed subsystem mechanics — combat formulas, progression curves, crafting recipes, status effect interactions, mathematical modeling of a mechanic.",
+      "mandate": "You are a Systems Designer specializing in the mathematical and logical underpinnings of game mechanics. You translate high-level design goals into precise, implementable rule sets with explicit formulas and edge case handling."
+    },
+    {
+      "id": "technical-artist",
+      "name": "Technical Artist",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Art & Visuals",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "art-director",
+      "description": "Technical artist bridging art and engineering — shaders, VFX, rendering optimization, art pipeline tools, art-to-engine issues.",
+      "mandate": "You are a Technical Artist for an indie game project. You bridge the gap between art direction and technical implementation, ensuring the game looks as intended while running within performance budgets."
+    },
+    {
+      "id": "technical-director",
+      "name": "Technical Director",
+      "tier": 1,
+      "tierLabel": "Director",
+      "department": "Executive Leadership",
+      "engine": "Core",
+      "model": "opus",
+      "maxTurns": 30,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash",
+        "WebSearch"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "Studio User",
+      "description": "High-level technical decisions — engine architecture, technology choices, performance strategy, technical risk, cross-system conflicts.",
+      "mandate": "You are the Technical Director for an indie game project. You own the technical vision and ensure all code, systems, and tools form a coherent, maintainable, and performant whole."
+    },
+    {
+      "id": "tools-programmer",
+      "name": "Tools Programmer",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Internal dev tools — editor extensions, content authoring tools, debug utilities, pipeline automation, editor workflow.",
+      "mandate": "You are a Tools Programmer for an indie game project. You build the internal tools that make the rest of the team more productive. Your users are other developers and content creators."
+    },
+    {
+      "id": "ue-blueprint-specialist",
+      "name": "Unreal Blueprint Specialist",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Unreal",
+      "model": "sonnet",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit"
+      ],
+      "disallowedTools": [
+        "Bash"
+      ],
+      "reportsTo": "lead-programmer",
+      "description": "Blueprint architecture and Blueprint/C++ boundary — optimization, maintainable graphs. Prevents Blueprint spaghetti, enforces clean BP patterns.",
+      "mandate": "You are the Blueprint Specialist for an Unreal Engine 5 project. You own the architecture and quality of all Blueprint assets."
+    },
+    {
+      "id": "ue-gas-specialist",
+      "name": "Unreal GAS Specialist",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Unreal",
+      "model": "sonnet",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Gameplay Ability System — abilities, gameplay effects, attribute sets, tags, ability tasks, prediction. Prevents common GAS anti-patterns.",
+      "mandate": "You are the Gameplay Ability System (GAS) Specialist for an Unreal Engine 5 project. You own everything related to GAS architecture and implementation."
+    },
+    {
+      "id": "ue-replication-specialist",
+      "name": "Unreal Replication Specialist",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Unreal",
+      "model": "sonnet",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Unreal networking — property replication, RPCs, client prediction, relevancy, net serialization, bandwidth. Server-authoritative architecture.",
+      "mandate": "You are the Unreal Replication Specialist for an Unreal Engine 5 multiplayer project. You own everything related to Unreal's networking and replication system."
+    },
+    {
+      "id": "ue-umg-specialist",
+      "name": "Unreal UMG Specialist",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Unreal",
+      "model": "sonnet",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Unreal UI implementation — UMG widget hierarchy, data binding, CommonUI input routing, widget styling, UI optimization.",
+      "mandate": "You are the UMG/CommonUI Specialist for an Unreal Engine 5 project. You own everything related to Unreal's UI framework."
+    },
+    {
+      "id": "ui-programmer",
+      "name": "UI Programmer",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Implements user interface systems — menus, HUDs, inventory screens, dialogue boxes, UI framework code, screen flow.",
+      "mandate": "You are a UI Programmer for an indie game project. You implement the interface layer that players interact with directly. Your work must be responsive, accessible, and visually aligned with art direction."
+    },
+    {
+      "id": "unity-addressables-specialist",
+      "name": "Unity Addressables Specialist",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Unity",
+      "model": "sonnet",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Unity asset management — Addressable groups, loading/unloading, content catalogs, remote delivery, asset bundle optimization, fast load times.",
+      "mandate": "You are the Unity Addressables Specialist for a Unity project. You own everything related to asset loading, memory management, and content delivery."
+    },
+    {
+      "id": "unity-dots-specialist",
+      "name": "Unity DOTS Specialist",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Unity",
+      "model": "sonnet",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Unity Data-Oriented Technology Stack — Entity Component System, Jobs, Burst compiler optimization, hybrid renderer, correct ECS patterns.",
+      "mandate": "You are the Unity DOTS/ECS Specialist for a Unity project. You own everything related to Unity's Data-Oriented Technology Stack."
+    },
+    {
+      "id": "unity-shader-specialist",
+      "name": "Unity Shader Specialist",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Unity",
+      "model": "sonnet",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Unity rendering — Shader Graph, custom HLSL, VFX Graph, render pipeline customization (URP/HDRP), post-processing within performance budgets.",
+      "mandate": "You are the Unity Shader and VFX Specialist for a Unity project. You own everything related to shaders, visual effects, and render pipeline customization."
+    },
+    {
+      "id": "unity-specialist",
+      "name": "Unity Specialist",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Unity",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash",
+        "Agent"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Authority on Unity-specific patterns and APIs — guides MonoBehaviour vs DOTS/ECS, Unity subsystems including Addressables and Input System.",
+      "mandate": "You are the Unity Engine Specialist for a game project built in Unity. You are the team's authority on all things Unity."
+    },
+    {
+      "id": "unity-ui-specialist",
+      "name": "Unity UI Specialist",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Unity",
+      "model": "sonnet",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Unity UI implementation — UI Toolkit (UXML/USS), UGUI Canvas, data binding, runtime UI performance, cross-platform adaptation.",
+      "mandate": "You are the Unity UI Specialist for a Unity project. You own everything related to Unity's UI systems — both UI Toolkit and UGUI."
+    },
+    {
+      "id": "unreal-specialist",
+      "name": "Unreal Specialist",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Engineering",
+      "engine": "Unreal",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "Bash",
+        "Agent"
+      ],
+      "disallowedTools": [],
+      "reportsTo": "lead-programmer",
+      "description": "Authority on Unreal-specific patterns and APIs — guides Blueprint vs C++, UE subsystems (GAS, Enhanced Input, Niagara, etc.).",
+      "mandate": "You are the Unreal Engine Specialist for an indie game project built in Unreal Engine 5. You are the team's authority on all things Unreal."
+    },
+    {
+      "id": "ux-designer",
+      "name": "UX Designer",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Game & UX Design",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit",
+        "WebSearch"
+      ],
+      "disallowedTools": [
+        "Bash"
+      ],
+      "reportsTo": "game-designer",
+      "description": "User experience flows, interaction design, information architecture — user flow mapping, interaction pattern design, onboarding, accessibility requirements.",
+      "mandate": "You are a UX Designer for an indie game project. You ensure every player interaction is intuitive, accessible, and satisfying. You design the invisible systems that make the game feel good to use."
+    },
+    {
+      "id": "world-builder",
+      "name": "World Builder",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Narrative",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit"
+      ],
+      "disallowedTools": [
+        "Bash"
+      ],
+      "reportsTo": "narrative-director",
+      "description": "World builder for lore — factions, cultures, history, geography, ecology, world rules. Faction design, lore consistency checks.",
+      "mandate": "You are a World Builder for an indie game project. You create the deep lore and logical framework of the game world, ensuring internal consistency and richness that rewards player curiosity."
+    },
+    {
+      "id": "writer",
+      "name": "Writer",
+      "tier": 3,
+      "tierLabel": "Specialist",
+      "department": "Narrative",
+      "engine": "Core",
+      "model": "inherit",
+      "maxTurns": 20,
+      "memory": "project",
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Write",
+        "Edit"
+      ],
+      "disallowedTools": [
+        "Bash"
+      ],
+      "reportsTo": "narrative-director",
+      "description": "Writer of player-facing text — dialogue, lore entries, item and ability descriptions, environmental text.",
+      "mandate": "You are a Writer for an indie game project. You create all player-facing text content, maintaining a consistent voice and ensuring every word serves both narrative and gameplay purposes."
+    }
+  ],
+  "skills": [
+    {
+      "id": "adopt",
+      "command": "/adopt",
+      "category": "Onboarding & Navigation",
+      "argumentHint": "[focus: full | gdds | adrs | stories | infra]",
+      "description": "Brownfield audit — do existing artifacts actually work? Numbered migration plan. Unlike /project-stage-detect, checks compliance not existence.",
+      "summary": "Brownfield format audit — checks internal structure of existing GDDs/ADRs/stories, produces migration plan",
+      "sections": [
+        "Phase 1: Detect Project State",
+        "Phase 2: Format Audit",
+        "Phase 3: Classify and Prioritise Gaps",
+        "Phase 4: Build the Migration Plan",
+        "Phase 5: Present Summary and Ask to Write",
+        "Phase 6: Write the Adoption Plan"
+      ]
+    },
+    {
+      "id": "architecture-decision",
+      "command": "/architecture-decision",
+      "category": "Architecture",
+      "argumentHint": "[title | retrofit <path> | accept <ADR-id>] [--review full|lean|solo]",
+      "description": "Create an ADR documenting a technical decision: context, alternatives considered, consequences.",
+      "summary": "Create an Architecture Decision Record (ADR)",
+      "sections": [
+        "0. Parse Arguments — Detect Retrofit / Acceptance Mode",
+        "1. Load Engine Context (ALWAYS FIRST)",
+        "2. Determine the next ADR number",
+        "3. Gather context",
+        "4. Guide the decision collaboratively",
+        "5. Generate the ADR"
+      ]
+    },
+    {
+      "id": "architecture-review",
+      "command": "/architecture-review",
+      "category": "Architecture",
+      "argumentHint": "[focus: full | coverage | consistency | engine | rtm | single-gdd path/to/gdd.md]",
+      "description": "Traceability matrix mapping GDD requirements to ADRs. Finds gaps, cross-ADR conflicts, engine compatibility. PASS/CONCERNS/NOT ASSESSED/FAIL.",
+      "summary": "Validate all ADRs for completeness, dependency ordering, and GDD coverage",
+      "sections": [
+        "Phase 1: Load Everything",
+        "Phase 2: Extract Technical Requirements from Every GDD",
+        "Phase 3: Build the Traceability Matrix",
+        "Phase 4: Cross-ADR Conflict Detection",
+        "Phase 5: Engine Compatibility Cross-Check",
+        "Phase 6: Architecture Document Coverage"
+      ]
+    },
+    {
+      "id": "art-bible",
+      "command": "/art-bible",
+      "category": "Art & Assets",
+      "argumentHint": "[--review full|lean|solo]",
+      "description": "Author the Art Bible — visual identity gating asset production. Run before /map-systems.",
+      "summary": "Guided, section-by-section Art Bible authoring — creates visual identity spec before asset production begins",
+      "sections": [
+        "Phase 0: Parse Arguments and Context Check",
+        "Phase 1: Framing",
+        "Phase 2: Visual Identity Foundation (Sections 1–4)",
+        "Phase 3: Production Guides (Sections 5–8)",
+        "Phase 4: Reference Direction (Section 9)",
+        "Phase 5: Art Director Sign-Off"
+      ]
+    },
+    {
+      "id": "asset-audit",
+      "command": "/asset-audit",
+      "category": "Art & Assets",
+      "argumentHint": "[category|all]",
+      "description": "Audit assets against naming conventions, file size budgets, format standards. Finds orphaned assets, missing references.",
+      "summary": "Audit assets for naming conventions, file size budgets, and pipeline compliance",
+      "sections": [
+        "Measuring file sizes and formats requires Bash",
+        "Insufficient input — check this before producing any report",
+        "Phase 1: Read Standards",
+        "Phase 2: Scan Asset Directories",
+        "Phase 3: Run Compliance Checks",
+        "Phase 4: Output Audit Report"
+      ]
+    },
+    {
+      "id": "asset-spec",
+      "command": "/asset-spec",
+      "category": "Art & Assets",
+      "argumentHint": "[system:<name> | level:<name> | character:<name>] [--review full|lean|solo]",
+      "description": "Per-asset visual specs plus AI generation prompts from GDDs and character profiles. After the art bible.",
+      "summary": "Generate per-asset visual specifications and AI generation prompts from GDDs, level docs, or character profiles",
+      "sections": [
+        "Phase 0b: Entity & Screen Inventory (runs when no arguments and no existing inventory)",
+        "Entities",
+        "UI Screens",
+        "HUD Elements",
+        "Audio",
+        "Phase 0: Parse Arguments"
+      ]
+    },
+    {
+      "id": "balance-check",
+      "command": "/balance-check",
+      "category": "Reviews & Analysis",
+      "argumentHint": "[system-name|path-to-data-file]",
+      "description": "Find balance outliers, broken progressions, degenerate strategies, economy imbalances in formulas and data. 'Check game balance'.",
+      "summary": "Analyze game balance data, formulas, and config — flag outliers",
+      "sections": [
+        "Insufficient input — check this before producing any report",
+        "Phase 1: Identify Balance Domain",
+        "Phase 2: Read Data Files",
+        "Phase 3: Read Design Document",
+        "Phase 4: Perform Analysis",
+        "Phase 5: Output the Analysis"
+      ]
+    },
+    {
+      "id": "brainstorm",
+      "command": "/brainstorm",
+      "category": "Game Design",
+      "argumentHint": "[genre or theme hint, or 'open'] [--review full|lean|solo]",
+      "description": "Guides the user through finding and choosing a game concept. Use when the user wants game ideas, a new concept, a game jam idea, or to explore other directions, including dropping the current idea and starting over.",
+      "summary": "Guided ideation using professional studio methods (MDA, SDT, Bartle, verb-first)",
+      "sections": [
+        "Lean Brief flow (`workflow: minimal`)"
+      ]
+    },
+    {
+      "id": "bug-report",
+      "command": "/bug-report",
+      "category": "Production",
+      "argumentHint": "[description] | analyze [path-to-file] | verify [BUG-ID] | close [BUG-ID]",
+      "description": "Structured bug report from a description, or analyze code for potential bugs. Reproduction steps, severity.",
+      "summary": "Create a structured bug report",
+      "sections": [
+        "Phase 1: Parse Arguments",
+        "Phase 2A: Description Mode",
+        "Summary",
+        "Classification",
+        "Environment",
+        "Reproduction Steps"
+      ]
+    },
+    {
+      "id": "bug-triage",
+      "command": "/bug-triage",
+      "category": "Production",
+      "argumentHint": "[sprint | full | trend]",
+      "description": "Re-evaluate open bugs — priority vs severity, assign to sprints, surface systemic trends. Run when the count grows.",
+      "summary": "Read all open bugs, re-evaluate priority vs. severity, assign owner and label",
+      "sections": [
+        "1. Parse Arguments",
+        "2. Load Bug Backlog",
+        "3. Classify Each Bug",
+        "4. Trend Analysis",
+        "5. Generate Triage Report",
+        "Triage Summary"
+      ]
+    },
+    {
+      "id": "changelog",
+      "command": "/changelog",
+      "category": "Workflow & Utility",
+      "argumentHint": "[version|sprint-number]",
+      "description": "Old name of /write-changelog. Prints one line, then runs /write-changelog.",
+      "summary": "Old name of /write-changelog. Prints one line, then runs /write-changelog.",
+      "sections": []
+    },
+    {
+      "id": "code-review",
+      "command": "/code-review",
+      "category": "Overlap with Claude Code's bundled skills",
+      "argumentHint": "[path-to-file-or-directory]",
+      "description": "Architectural review of written code: coding standards, SOLID, testability, performance.",
+      "summary": "**Claude Code Game Studios'** — project skills take the bare name",
+      "sections": [
+        "Insufficient input — check this before producing any report",
+        "Phase 1: Load Target Files",
+        "Phase 2: Identify Engine Specialists",
+        "Phase 3: ADR Compliance Check",
+        "Phase 4: Standards Compliance",
+        "Phase 5: Architecture and SOLID"
+      ]
+    },
+    {
+      "id": "consistency-check",
+      "command": "/consistency-check",
+      "category": "Reviews & Analysis",
+      "argumentHint": "[full | since-last-review | entity:<name> | item:<name>]",
+      "description": "Scan GDDs against the entity registry for cross-document conflicts. Grep-first approach targets conflicting sections, different stats.",
+      "summary": "Scan all GDDs against the entity registry to detect cross-document inconsistencies (stats, names, rules that contradict each other)",
+      "sections": [
+        "Phase 1: Parse Arguments and Load Registry",
+        "Phase 2: Locate In-Scope GDDs",
+        "Phase 3: Grep-First Conflict Scan",
+        "Phase 4: Deep Investigation (Conflicts Only)",
+        "Phase 5: Output Report",
+        "Consistency Check Report"
+      ]
+    },
+    {
+      "id": "content-audit",
+      "command": "/content-audit",
+      "category": "Reviews & Analysis",
+      "argumentHint": "[system-name | --summary | (no arg = full audit)]",
+      "description": "Audit GDD content counts against what's implemented — planned vs built.",
+      "summary": "Audit GDD-specified content counts against implemented content",
+      "sections": [
+        "Insufficient input — check this before producing any report",
+        "Phase 1 — Context Gathering",
+        "Phase 2 — Implementation Scan",
+        "Phase 3 — Gap Report",
+        "Phase 4 — Output",
+        "Summary"
+      ]
+    },
+    {
+      "id": "create-architecture",
+      "command": "/create-architecture",
+      "category": "Architecture",
+      "argumentHint": "[focus-area: full | layers | data-flow | api-boundaries | adr-audit] [--review full|lean|solo]",
+      "description": "Author the architecture blueprint before code is written. Validates decisions against the pinned engine, flags knowledge gaps.",
+      "summary": "Guided authoring of the master architecture document",
+      "sections": [
+        "Phase 0: Load All Context",
+        "Phase 1: System Layer Mapping",
+        "Phase 2: Module Ownership Map",
+        "Phase 3: Data Flow",
+        "Phase 4: API Boundaries",
+        "Phase 5: ADR Audit + Traceability Check"
+      ]
+    },
+    {
+      "id": "create-control-manifest",
+      "command": "/create-control-manifest",
+      "category": "Architecture",
+      "argumentHint": "[update — regenerate from current ADRs] [--review full|lean|solo]",
+      "description": "Builds a short list of must-do and never-do coding rules per system from accepted ADRs. Use when the user wants programmer rules or a cheat sheet from the ADRs, or needs it regenerated after ADR changes.",
+      "summary": "Generate flat programmer rules sheet from accepted ADRs",
+      "sections": [
+        "Phase 1: Load the inputs",
+        "Phase 2: Extract the rules from each ADR",
+        "Phase 3: Add the global rules",
+        "Phase 4: Show the summary, then the review",
+        "Control Manifest Preview",
+        "Phase 5: Write the control manifest"
+      ]
+    },
+    {
+      "id": "create-epics",
+      "command": "/create-epics",
+      "category": "Stories & Sprints",
+      "argumentHint": "[system-name | layer: foundation|core|feature|presentation | all] [--review full|lean|solo]",
+      "description": "Turns the GDDs and architecture into epics, one per architectural module. Use when the user wants to break the game into epics or plan the work before writing stories. Not for splitting one epic into stories.",
+      "summary": "Translate GDDs + ADRs into epics — one per architectural module",
+      "sections": [
+        "Phase 1: Scope and tier",
+        "Phase 2: Load the inputs",
+        "Phase 3: Define each epic, ask one at a time",
+        "Epic: [System Name]",
+        "Phase 4: Producer review",
+        "Phase 5: Write each epic"
+      ]
+    },
+    {
+      "id": "create-stories",
+      "command": "/create-stories",
+      "category": "Stories & Sprints",
+      "argumentHint": "[epic-slug | epic-path] [--review full|lean|solo]",
+      "description": "Breaks one epic into implementable stories with acceptance criteria. Use when the user wants stories for an epic or the next batch of work to build. Not for turning the whole design into epics.",
+      "summary": "Break a single epic into implementable story files",
+      "sections": [
+        "Phase 1: Epic and settings",
+        "Phase 2: Load the inputs",
+        "Phase 3: Type each story",
+        "Phase 4: Draft the stories",
+        "Phase 5: QA lead review",
+        "Phase 6: Show the stories, ask once"
+      ]
+    },
+    {
+      "id": "cut",
+      "command": "/cut",
+      "category": "Production",
+      "argumentHint": "[no arguments]",
+      "description": "Proposes cuts and a polish list to finish the game from its brief and what is built; the person picks each cut. A game to sell also gets a release date and a feature freeze. Use when asked what to cut, how to finish or ship it, or for a polish list.",
+      "summary": "Finish the game: proposes cuts from the brief and what is built (you pick each), keeps a polish list, and for a game to sell records a release date and a feature freeze",
+      "sections": [
+        "Phase 1: Read what exists",
+        "Phase 2: Propose",
+        "Phase 3: Dates, for sell, early_access and publisher only",
+        "Phase 4: The screen and the pick",
+        "Phase 5: Write and commit",
+        "Afterwards"
+      ]
+    },
+    {
+      "id": "day-one-patch",
+      "command": "/day-one-patch",
+      "category": "Release",
+      "argumentHint": "[scope: known-bugs | cert-feedback | all]",
+      "description": "Day-one launch patch — focused fix for known issues found after gold master. Mini-sprint with QA gate and rollback.",
+      "summary": "Prepare a focused day-one patch for known issues discovered after gold master but before or at public launch",
+      "sections": [
+        "Phase 1: Load Release Context",
+        "Phase 2: Scope the Patch",
+        "Phase 3: Rollback Plan",
+        "Phase 4: Implement Fixes",
+        "Phase 5: Patch QA Gate",
+        "Phase 6: Generate Patch Record"
+      ]
+    },
+    {
+      "id": "design-review",
+      "command": "/design-review",
+      "category": "Reviews & Analysis",
+      "argumentHint": "[path-to-design-doc] [--review full|lean|solo]",
+      "description": "Reviews one design document for completeness, internal consistency, implementability, and design standards. Before handing to programmers.",
+      "summary": "Review a game design document for completeness and consistency",
+      "sections": [
+        "Phase 0: Parse Arguments",
+        "Phase 1: Load Documents",
+        "Phase 2: Completeness Check",
+        "Phase 3: Consistency and Implementability",
+        "Phase 3b: Adversarial Specialist Review (full mode only)",
+        "Phase 4: Output Review"
+      ]
+    },
+    {
+      "id": "design-system",
+      "command": "/design-system",
+      "category": "Game Design",
+      "argumentHint": "<system-name> [--review full|lean|solo]",
+      "description": "Section-by-section GDD authoring for one system — walks through each required section, cross-references dependencies.",
+      "summary": "Guided, section-by-section GDD authoring for a single game system",
+      "sections": [
+        "1. Parse Arguments & Validate",
+        "2. Gather Context (Read Phase)",
+        "3. Create File Skeleton",
+        "4. Section-by-Section Design",
+        "5. Post-Design Validation",
+        "6. Specialist Routing"
+      ]
+    },
+    {
+      "id": "dev-story",
+      "command": "/dev-story",
+      "category": "Stories & Sprints",
+      "argumentHint": "[story-path]",
+      "description": "Implements one story in code with tests, following its ADRs. Use when the user says to build, implement or start working on a story. Not for checking readiness beforehand or closing the story after.",
+      "summary": "Read a story and implement it — routes to the correct programmer agent",
+      "sections": [
+        "Phase 1: The story",
+        "Phase 2: Can it start?",
+        "Phase 3: Mark it In Progress",
+        "Phase 4: Who implements it",
+        "Phase 5: Hand out the work",
+        "Phase 6: Check the result"
+      ]
+    },
+    {
+      "id": "estimate",
+      "command": "/estimate",
+      "category": "Stories & Sprints",
+      "argumentHint": "[task-description]",
+      "description": "Estimate task effort from complexity, dependencies, velocity, risk. Structured estimate with confidence levels.",
+      "summary": "Structured effort estimate with complexity, dependencies, and risk breakdown",
+      "sections": [
+        "Phase 1: Understand the Task",
+        "Phase 2: Scan Affected Code",
+        "Phase 3: Analyze Complexity Factors",
+        "Phase 4: Generate the Estimate",
+        "Task Estimate: [Task Name]",
+        "Phase 5: Next Steps"
+      ]
+    },
+    {
+      "id": "gate-check",
+      "command": "/gate-check",
+      "category": "Reviews & Analysis",
+      "argumentHint": "[target-phase: systems-design | technical-setup | pre-production | production | polish | release] [--review full|lean|solo]",
+      "description": "Ready to advance between development stages? PASS/CONCERNS/NOT ASSESSED/FAIL with blockers and required artifacts. 'Can we move to production?'",
+      "summary": "Validate readiness to advance between development phases (PASS/CONCERNS/NOT ASSESSED/FAIL)",
+      "sections": [
+        "Production Stages (7)",
+        "1. Parse Arguments",
+        "2. Phase Gate Definitions",
+        "2b. Workflow Tier Adjustment",
+        "3. Run the Gate Check",
+        "4. Collaborative Assessment"
+      ]
+    },
+    {
+      "id": "help",
+      "command": "/help",
+      "category": "Workflow & Utility",
+      "argumentHint": "[optional: what you just finished, e.g. 'finished design-review' or 'stuck on ADRs']",
+      "description": "Old name of /next-step. Prints one line, then runs /next-step.",
+      "summary": "Old name of /next-step. Prints one line, then runs /next-step.",
+      "sections": []
+    },
+    {
+      "id": "hotfix",
+      "command": "/hotfix",
+      "category": "Release",
+      "argumentHint": "[bug-id or description]",
+      "description": "Emergency fix bypassing normal sprint process — hotfix branch, approvals tracked, backport verified, full audit trail.",
+      "summary": "Emergency fix workflow with audit trail, bypassing normal sprint process",
+      "sections": [
+        "Phase 1: Assess Severity",
+        "Phase 2: Create Hotfix Record",
+        "Hotfix: [Short Description]",
+        "Phase 3: Create Hotfix Branch",
+        "Phase 4: Investigate and Propose",
+        "Phase 4b: Implement (only after approval)"
+      ]
+    },
+    {
+      "id": "launch-checklist",
+      "command": "/launch-checklist",
+      "category": "Release",
+      "argumentHint": "[launch-date or 'dry-run']",
+      "description": "Launch readiness across every department: code, content, store, marketing, community, infrastructure, legal, go/no-go sign-offs.",
+      "summary": "Complete launch readiness validation across all departments",
+      "sections": [
+        "Phase 1: Parse Arguments",
+        "Phase 2: Gather Project Context",
+        "Phase 3: Scan Codebase Health",
+        "Phase 4: Generate the Launch Checklist",
+        "1. Code Readiness",
+        "2. Content Readiness"
+      ]
+    },
+    {
+      "id": "localize",
+      "command": "/localize",
+      "category": "Creative & Content",
+      "argumentHint": "[scan|extract|validate|status|brief|cultural-review|vo-pipeline|rtl-check|freeze|qa]",
+      "description": "Localization pipeline — find hardcoded strings, extract string tables, cultural review, VO, RTL, enforce string freeze.",
+      "summary": "Localization workflow: string extraction, validation, translation readiness",
+      "sections": [
+        "Phase 2A: Scan Mode",
+        "Phase 2B: Extract Mode",
+        "Phase 2C: Validate Mode",
+        "Phase 2D: Status Mode",
+        "Localization Status",
+        "Phase 2E: Brief Mode"
+      ]
+    },
+    {
+      "id": "map-systems",
+      "command": "/map-systems",
+      "category": "Game Design",
+      "argumentHint": "[next | system-name] [--review full|lean|solo]",
+      "description": "Decompose a concept into individual systems, map dependencies, prioritize design order, create the systems index.",
+      "summary": "Decompose game concept into systems, map dependencies, prioritize design order",
+      "sections": [
+        "Parse Arguments",
+        "Phase 1: Read Concept (Required Context)",
+        "Phase 2: Systems Enumeration (Collaborative)",
+        "Phase 3: Dependency Mapping (Collaborative)",
+        "Phase 4: Priority Assignment (Collaborative)",
+        "Phase 5: Create Systems Index (Write)"
+      ]
+    },
+    {
+      "id": "milestone-review",
+      "command": "/milestone-review",
+      "category": "Production",
+      "argumentHint": "[milestone-name|current] [--review full|lean|solo]",
+      "description": "Milestone progress review — completeness, quality metrics, risk, go/no-go recommendation. At checkpoints or before a deadline.",
+      "summary": "Review milestone progress and generate status report",
+      "sections": [
+        "Insufficient input — check this before producing any report",
+        "Phase 0: Parse Arguments",
+        "Phase 1: Load Milestone Data",
+        "Phase 2: Scan Codebase Health",
+        "Phase 3: Generate the Milestone Review",
+        "Overview"
+      ]
+    },
+    {
+      "id": "next-step",
+      "command": "/next-step",
+      "category": "Onboarding & Navigation",
+      "argumentHint": "[optional: what you just finished, e.g. 'finished design-review' or 'stuck on ADRs']",
+      "description": "Names the one next step: make a game, change it after play, grow it, or the next studio-mode step. Use when asked what to do next, or stuck.",
+      "summary": "Context-aware \"what do I do next?\" — reads current stage and surfaces the required next step",
+      "sections": [
+        "Live Project State",
+        "Step 1: Read the Catalog",
+        "Step 1b: Find Skills Not in the Catalog",
+        "Step 2: Determine the Current Stage",
+        "Step 3: Read Session Context",
+        "Step 4: Check Step Completion for the Current Stage"
+      ]
+    },
+    {
+      "id": "onboard",
+      "command": "/onboard",
+      "category": "Creative & Content",
+      "argumentHint": "[role|area]",
+      "description": "Onboarding doc for a new contributor or agent — project state, conventions, priorities relevant to the specified role.",
+      "summary": "Generate contextual onboarding document for a new contributor or agent",
+      "sections": [
+        "Insufficient input — check this before producing any report",
+        "Phase 1: Load Project Context",
+        "Phase 2: Scan Relevant Area",
+        "Phase 3: Generate Onboarding Document",
+        "Project Summary",
+        "Your Role"
+      ]
+    },
+    {
+      "id": "patch-notes",
+      "command": "/patch-notes",
+      "category": "Release",
+      "argumentHint": "[version] [--style brief|detailed|full]",
+      "description": "Player-facing patch notes from git history and changelogs. Translates developer language into player communication.",
+      "summary": "Generate player-facing patch notes from git history and internal data",
+      "sections": [
+        "Provenance check — before reading any history",
+        "Phase 1: Parse Arguments",
+        "Phase 2: Gather Change Data",
+        "Phase 2b: Detect Tone Guide and Template",
+        "Phase 3: Categorize and Translate",
+        "Phase 4: Generate Patch Notes"
+      ]
+    },
+    {
+      "id": "perf-profile",
+      "command": "/perf-profile",
+      "category": "Reviews & Analysis",
+      "argumentHint": "[system-name or 'full']",
+      "description": "Performance profiling — find bottlenecks, measure against budgets, produce ranked optimization recommendations.",
+      "summary": "Structured performance profiling with bottleneck identification",
+      "sections": [
+        "Insufficient input — check this before producing any report",
+        "Phase 0: Resolve Budget Enforcement",
+        "Phase 1: Determine Scope",
+        "Phase 2: Load Performance Budgets",
+        "Phase 3: Analyze Codebase",
+        "Phase 4: Generate Profiling Report"
+      ]
+    },
+    {
+      "id": "playtest-report",
+      "command": "/playtest-report",
+      "category": "Production",
+      "argumentHint": "[new|analyze path-to-notes] [--review full|lean|solo]",
+      "description": "Structured playtest report template, or turn existing playtest notes into structured feedback.",
+      "summary": "Generate a structured playtest report or analyze existing playtest notes",
+      "sections": [
+        "Phase 1: Parse Arguments",
+        "Phase 2A: New Template Mode",
+        "Session Info",
+        "Test Focus",
+        "First Impressions (First 5 minutes)",
+        "Gameplay Flow"
+      ]
+    },
+    {
+      "id": "project-settings",
+      "command": "/project-settings",
+      "category": "Onboarding & Navigation",
+      "argumentHint": "[key | key=value | --local key=value]",
+      "description": "Shows or changes a project setting and where its value comes from. Use to check or set one.",
+      "summary": "View or change project config — the effective merged values, or a local override in `project.local.yaml`",
+      "sections": [
+        "Phase 0: Parse Arguments",
+        "Phase 1: Load Helper",
+        "Phase 1b: Reserved-setting detection",
+        "Phase 2: View-all Mode",
+        "Phase 3: View-one Mode",
+        "Phase 4: Set-yaml Mode"
+      ]
+    },
+    {
+      "id": "project-stage-detect",
+      "command": "/project-stage-detect",
+      "category": "Onboarding & Navigation",
+      "argumentHint": "[optional: role filter like 'programmer' or 'designer']",
+      "description": "Analyze project state, detect stage, identify gaps, recommend next steps. 'Where are we in development?'",
+      "summary": "Full project audit — detect phase, identify existence gaps, recommend next steps",
+      "sections": [
+        "Workflow",
+        "Completeness Overview",
+        "Gaps Identified",
+        "Recommended Next Steps",
+        "Example Usage",
+        "Follow-Up Actions"
+      ]
+    },
+    {
+      "id": "propagate-design-change",
+      "command": "/propagate-design-change",
+      "category": "Game Design",
+      "argumentHint": "[path/to/changed-gdd.md] [--review full|lean|solo]",
+      "description": "Finds architecture decisions (ADRs) made stale by a changed GDD and walks through resolving each. Use when the user changed a number or rule in a GDD and asks which ADRs or architecture decisions are now out of date.",
+      "summary": "When a GDD is revised, find affected ADRs and produce an impact report",
+      "sections": [
+        "Phase 1: The GDD path",
+        "Phase 2: What changed",
+        "Phase 3: The change summary",
+        "Change Summary: [GDD filename]",
+        "Phase 4: The ADRs in scope",
+        "Phase 5: Impact analysis"
+      ]
+    },
+    {
+      "id": "prototype",
+      "command": "/prototype",
+      "category": "Creative & Content",
+      "argumentHint": "[what to make] [--from <your game>] [--path html|engine|paper] [--review full|lean|solo] [--spike]",
+      "description": "Asks a few questions, writes a one-page brief, builds a playable browser game as one HTML folder it plays and screenshots; with an engine set, a throwaway engine or paper prototype. Ends on proceed, pivot or kill. Use when the user says make me a game, wants to try a game idea or mechanic, needs a quick spike, asks to change a game it made, or says they love or hate it.",
+      "summary": "A few questions, a one-page brief, then a playable browser game built from it at the session's effort and given a short scripted check before handover; with an engine set, a throwa",
+      "sections": [
+        "Purpose",
+        "Choose the route",
+        "One-shot 0: Bring it in",
+        "One-shot 1: The questions and the brief",
+        "One-shot 2: The build",
+        "One-shot 3: Hand over"
+      ]
+    },
+    {
+      "id": "qa-plan",
+      "command": "/qa-plan",
+      "category": "QA & Testing",
+      "argumentHint": "[sprint | feature: system-name | story: path]",
+      "description": "QA test plan for a sprint — classifies stories by Logic/Integration/Visual/UI, covers automated tests, manual cases, smoke scope.",
+      "summary": "Generate a QA test plan for a sprint or feature",
+      "sections": [
+        "Phase 1: Parse Scope",
+        "Phase 2: Load Inputs",
+        "Phase 3: Classify Each Story",
+        "Phase 4: Generate Test Plan",
+        "Test Summary",
+        "Automated Tests Required"
+      ]
+    },
+    {
+      "id": "quick-design",
+      "command": "/quick-design",
+      "category": "Game Design",
+      "argumentHint": "[brief description of the change]",
+      "description": "Lightweight spec for small changes — tuning adjustments, minor mechanics. Embeds directly into stories; skips full GDD.",
+      "summary": "Lightweight design spec for small changes — tuning, tweaks, minor additions",
+      "sections": [
+        "1. Classify the Change",
+        "2. Context Scan",
+        "3. Draft the Quick Design Spec",
+        "Change",
+        "Tuning Knob Mapping",
+        "Acceptance Criteria"
+      ]
+    },
+    {
+      "id": "regression-suite",
+      "command": "/regression-suite",
+      "category": "QA & Testing",
+      "argumentHint": "[update | audit | report]",
+      "description": "Map test coverage to GDD critical paths, find fixed bugs lacking regression tests, flag drift from new features.",
+      "summary": "Map test coverage to GDD critical paths, identify fixed bugs without regression tests",
+      "sections": [
+        "1. Parse Arguments",
+        "2. Load Context",
+        "3. Map Coverage — Critical Paths",
+        "4. Map Coverage — Fixed Bugs",
+        "5. Detect Coverage Drift",
+        "6. Generate Report and Suite Manifest"
+      ]
+    },
+    {
+      "id": "release-checklist",
+      "command": "/release-checklist",
+      "category": "Release",
+      "argumentHint": "[platform: pc|console|mobile|all]",
+      "description": "Pre-release checklist — build verification, certification requirements, store metadata, launch readiness.",
+      "summary": "Generate and validate a pre-release checklist for the current build",
+      "sections": [
+        "Phase 1: Parse Arguments",
+        "Phase 2: Load Project Context",
+        "Phase 3: Scan Codebase",
+        "Phase 4: Generate the Release Checklist",
+        "Release Checklist: [Version] -- [Platform]",
+        "Phase 5: Save Checklist"
+      ]
+    },
+    {
+      "id": "retrospective",
+      "command": "/retrospective",
+      "category": "Production",
+      "argumentHint": "[sprint-N|milestone-name]",
+      "description": "Sprint or milestone retrospective from completed work, velocity, blockers. Actionable insights for the next iteration.",
+      "summary": "Run a structured sprint or milestone retrospective",
+      "sections": [
+        "Insufficient input — check this before producing any report",
+        "Phase 1: Parse Arguments",
+        "Phase 1b: Check for Existing Retrospective",
+        "Phase 2: Load Sprint or Milestone Data",
+        "Phase 3: Analyze Completion and Trends",
+        "Phase 4: Generate the Retrospective"
+      ]
+    },
+    {
+      "id": "reverse-document",
+      "command": "/reverse-document",
+      "category": "Production",
+      "argumentHint": "<type> <path> (e.g., 'design src/gameplay/combat', 'architecture Assets/Scripts/Core' or 'brief prototypes/my-game')",
+      "description": "Writes missing design or architecture docs, or a game's brief, from code. Use when code or prototypes have no docs.",
+      "summary": "Generate design or architecture docs from existing implementation",
+      "sections": [
+        "Workflow",
+        "Phase 1: Parse Arguments",
+        "Phase 2: Analyze Implementation",
+        "Phase 3: Ask Clarifying Questions",
+        "Phase 3b: Sufficiency Check — is there enough here to document?",
+        "Phase 4: Present Findings"
+      ]
+    },
+    {
+      "id": "review-all-gdds",
+      "command": "/review-all-gdds",
+      "category": "Game Design",
+      "argumentHint": "[focus: full | consistency | design-theory | since-last-review]",
+      "description": "Holistic cross-GDD review — contradictions between systems, dominant strategies, economic imbalance, cognitive overload, pillar drift.",
+      "summary": "Cross-GDD consistency and game design holism review across all design docs",
+      "sections": [
+        "Phase 1: Load Everything",
+        "Phase 2: Cross-GDD Consistency",
+        "Phase 3: Game Design Holism",
+        "Phase 4: Cross-System Scenario Walkthrough",
+        "Phase 5: Output the Review Report",
+        "Phase 6: Write Report and Flag GDDs"
+      ]
+    },
+    {
+      "id": "scope-check",
+      "command": "/scope-check",
+      "category": "Reviews & Analysis",
+      "argumentHint": "[feature-name or sprint-N]",
+      "description": "Scope creep check — current scope versus the original plan. Flags additions, quantifies bloat, recommends cuts. 'Any scope creep?' Finishing a game from its brief is /cut's.",
+      "summary": "Analyze feature or sprint scope against original plan, flag scope creep",
+      "sections": [
+        "Phase 1: Find the Original Plan",
+        "Phase 2: Read the Current State",
+        "Phase 3: Compare Original vs Current Scope",
+        "Scope Check: [Feature/Sprint Name]",
+        "Phase 4: Verdict",
+        "Phase 5: Next Steps"
+      ]
+    },
+    {
+      "id": "security-audit",
+      "command": "/security-audit",
+      "category": "Reviews & Analysis",
+      "argumentHint": "[full | network | save | input | quick]",
+      "description": "Security audit — save tampering, cheat vectors, network exploits, data exposure, input validation. Before public or multiplayer release.",
+      "summary": "Audit the game for security vulnerabilities: save tampering, cheat vectors, network exploits, data exposure, and input validation gaps",
+      "sections": [
+        "Phase 1: Parse Arguments and Scope",
+        "Phase 2: Spawn Security Engineer",
+        "Phase 3: Audit Categories",
+        "Phase 4: Classify Findings",
+        "Phase 5: Generate Report",
+        "Executive Summary"
+      ]
+    },
+    {
+      "id": "settings",
+      "command": "/settings",
+      "category": "Workflow & Utility",
+      "argumentHint": "[key | key=value | --local key=value]",
+      "description": "Old name of /project-settings. Prints one line, then runs /project-settings.",
+      "summary": "Old name of /project-settings. Prints one line, then runs /project-settings.",
+      "sections": []
+    },
+    {
+      "id": "setup-engine",
+      "command": "/setup-engine",
+      "category": "Onboarding & Navigation",
+      "argumentHint": "[engine] | [engine version] | refresh | upgrade [old-version] [new-version] | no args for guided selection",
+      "description": "Sets up and pins the engine version: web for a new project unless Godot, Unity or Unreal is named. Use to choose or upgrade it.",
+      "summary": "Configure engine + version, detect knowledge gaps, populate version-aware reference docs",
+      "sections": [
+        "1. Parse Arguments",
+        "2. Guided Mode (No Arguments)",
+        "3. Look Up Current Version",
+        "4. Update CLAUDE.md Technology Stack",
+        "5. Populate Technical Preferences",
+        "5.5 Populate `project.yaml` (Primary Config Store)"
+      ]
+    },
+    {
+      "id": "skill-improve",
+      "command": "/skill-improve",
+      "category": "QA & Testing",
+      "argumentHint": "[skill-name]",
+      "description": "Improve a skill via a test-fix-retest loop — static checks, targeted fixes, keep or revert on score change.",
+      "summary": "Improve a skill using a test-fix-retest loop — diagnose, propose fix, rewrite, verify",
+      "sections": [
+        "Phase 1: Parse Argument",
+        "Phase 2: Baseline Test",
+        "Phase 3: Diagnose",
+        "Phase 4: Propose Fix",
+        "Phase 5: Write and Retest",
+        "Phase 6: Verdict"
+      ]
+    },
+    {
+      "id": "skill-test",
+      "command": "/skill-test",
+      "category": "QA & Testing",
+      "argumentHint": "static [skill-name | all] | spec [skill-or-agent-name] | category [skill-or-agent-name | all] | audit",
+      "description": "Validate skill files for structural compliance and behavioral correctness. Four modes: static linter, spec, category rubric, audit.",
+      "summary": "Validate skill files for structural compliance and behavioral correctness",
+      "sections": [
+        "Phase 1: Parse Arguments",
+        "Phase 2A: Static Mode — Structural Linter",
+        "Phase 2B: Spec Mode — Behavioral Verifier",
+        "Phase 2D: Category Mode — Rubric Evaluation",
+        "Phase 2C: Audit Mode — Coverage Report",
+        "Phase 3: Recommended Next Steps"
+      ]
+    },
+    {
+      "id": "smoke-check",
+      "command": "/smoke-check",
+      "category": "QA & Testing",
+      "argumentHint": "[sprint | quick | --platform pc|console|mobile|all]",
+      "description": "Critical-path smoke gate before QA hand-off — runs the automated suite. A failed check means the build is not QA-ready.",
+      "summary": "Run critical path smoke test gate before QA hand-off",
+      "sections": [
+        "Parse Arguments",
+        "Phase 1: Detect Test Setup",
+        "Phase 2: Run Automated Tests",
+        "Phase 3: Check Test Coverage",
+        "Phase 4: Run Manual Smoke Checks",
+        "Phase 5: Generate Report"
+      ]
+    },
+    {
+      "id": "soak-test",
+      "command": "/soak-test",
+      "category": "QA & Testing",
+      "argumentHint": "[duration: 30m | 1h | 2h | 4h] [focus: memory | stability | balance | all]",
+      "description": "Soak test protocol for extended play — what to observe and log for slow leaks, fatigue, late-appearing edge cases.",
+      "summary": "Generate a soak test protocol for extended play sessions",
+      "sections": [
+        "1. Parse Arguments",
+        "2. Load Context",
+        "3. Define Observation Checkpoints",
+        "4. Generate the Soak Test Protocol",
+        "5. Generate the Protocol Document",
+        "Pre-Session Setup"
+      ]
+    },
+    {
+      "id": "sprint-plan",
+      "command": "/sprint-plan",
+      "category": "Stories & Sprints",
+      "argumentHint": "[new|update|status] [--review full|lean|solo]",
+      "description": "New or updated sprint plan from the current milestone, completed work, and available capacity.",
+      "summary": "Generate or update a sprint plan; initializes sprint-status.yaml",
+      "sections": [
+        "Existing Sprints",
+        "Phase 0: Parse Arguments",
+        "Phase 1: Gather Context",
+        "Phase 2: Generate Output",
+        "Sprint Goal",
+        "Goal Prerequisites"
+      ]
+    },
+    {
+      "id": "sprint-status",
+      "command": "/sprint-status",
+      "category": "Stories & Sprints",
+      "argumentHint": "[sprint-number or blank for current]",
+      "description": "Fast, concise sprint snapshot — burndown and emerging risks for situational awareness. 'How is the sprint going?'",
+      "summary": "Fast 30-line sprint snapshot (reads sprint-status.yaml)",
+      "sections": [
+        "1. Find the Sprint",
+        "2. Calculate Days Remaining",
+        "3. Scan Story Status",
+        "4. Burndown Assessment",
+        "5. Output",
+        "Sprint [N] Status — [Today's Date]"
+      ]
+    },
+    {
+      "id": "start",
+      "command": "/start",
+      "category": "Onboarding & Navigation",
+      "argumentHint": "[no arguments]",
+      "description": "Guides a first-time user through onboarding and picks the right workflow. Use when the user is new, just cloned or installed the studio, has no idea or engine yet, asks where to begin, or wants to bring in an existing game. A request for a game itself ('make me a game where...') is /prototype's.",
+      "summary": "First-time onboarding — asks where you are, then guides you to the right workflow",
+      "sections": [
+        "Phase 1: Read the project",
+        "Phase 2: Ask where the user is",
+        "Phase 3: Route",
+        "Phase 4: Show what you assume, then save it",
+        "Phase 5: Ask how much to confirm",
+        "Phase 6: Show the path"
+      ]
+    },
+    {
+      "id": "story-done",
+      "command": "/story-done",
+      "category": "Stories & Sprints",
+      "argumentHint": "[story-file-path] [--review full|lean|solo]",
+      "description": "Closes a finished story: verifies each acceptance criterion, checks for design or ADR deviations and updates its status. Use when the user says a story is done, finished or ready to close.",
+      "summary": "8-phase completion review after implementation; updates story file, surfaces next story",
+      "sections": [
+        "Phase 1: The story and its settings",
+        "Phase 2: What the story is checked against",
+        "Phase 3: Verify each criterion",
+        "Phase 4: Test evidence and the run result",
+        "Phase 5: Deviations and scope",
+        "Phase 6: Review gates"
+      ]
+    },
+    {
+      "id": "story-readiness",
+      "command": "/story-readiness",
+      "category": "Stories & Sprints",
+      "argumentHint": "[story-file-path or 'all' or 'sprint'] [--review full|lean|solo]",
+      "description": "Checks whether a story is ready to implement: clear acceptance criteria, no open questions, valid ADR and dependencies. Use when the user asks if a story, or the sprint's stories, are ready to start or build.",
+      "summary": "Validate a story is implementation-ready before pickup (READY/NEEDS WORK/BLOCKED)",
+      "sections": [
+        "Phase 1: Scope",
+        "Phase 2: Facts, read once for the run",
+        "Phase 3: The checklist",
+        "Phase 4: Verdict",
+        "Phase 5: QA lead review",
+        "Phase 6: Report and close"
+      ]
+    },
+    {
+      "id": "team-audio",
+      "command": "/team-audio",
+      "category": "Team Orchestration",
+      "argumentHint": "[feature or area to design audio for] [--review full|lean|solo]",
+      "description": "Orchestrate the audio team — audio-director, sound-designer, technical-artist, gameplay-programmer — direction through implementation.",
+      "summary": "audio-director + sound-designer + technical-artist + gameplay-programmer",
+      "sections": [
+        "Phase 0: Resolve Config",
+        "How to Delegate",
+        "File Write Protocol",
+        "Next Steps",
+        "Error Recovery Protocol"
+      ]
+    },
+    {
+      "id": "team-combat",
+      "command": "/team-combat",
+      "category": "Team Orchestration",
+      "argumentHint": "[combat feature description] [--review full|lean|solo]",
+      "description": "Orchestrate the combat team — game-designer, gameplay-programmer, ai-programmer, technical-artist, sound-designer, qa-tester — design through implement and validate.",
+      "summary": "game-designer + gameplay-programmer + ai-programmer + technical-artist + sound-designer + qa-tester",
+      "sections": [
+        "Phase 0: Resolve Config",
+        "Team Composition",
+        "How to Delegate",
+        "Pipeline",
+        "Error Recovery Protocol",
+        "File Write Protocol"
+      ]
+    },
+    {
+      "id": "team-level",
+      "command": "/team-level",
+      "category": "Team Orchestration",
+      "argumentHint": "[level name or area to design] [--review full|lean|solo]",
+      "description": "Orchestrate the level team — level-designer, narrative-director, world-builder, art-director, systems-designer, qa-tester — for complete area creation.",
+      "summary": "level-designer + narrative-director + world-builder + art-director + systems-designer + qa-tester",
+      "sections": [
+        "Phase 0: Resolve Config",
+        "How to Delegate",
+        "File Write Protocol",
+        "Next Steps",
+        "Error Recovery Protocol"
+      ]
+    },
+    {
+      "id": "team-live-ops",
+      "command": "/team-live-ops",
+      "category": "Team Orchestration",
+      "argumentHint": "[season name or event description] [--review full|lean|solo]",
+      "description": "Orchestrate the live-ops team — live-ops-designer, economy-designer, analytics-engineer, community-manager, writer — for a season or live event.",
+      "summary": "live-ops-designer + economy-designer + community-manager + analytics-engineer",
+      "sections": [
+        "Phase 0: Resolve Config",
+        "Team Composition",
+        "How to Delegate",
+        "Pipeline",
+        "Output Documents",
+        "Error Recovery Protocol"
+      ]
+    },
+    {
+      "id": "team-narrative",
+      "command": "/team-narrative",
+      "category": "Team Orchestration",
+      "argumentHint": "[narrative content description] [--review full|lean|solo]",
+      "description": "Orchestrate the narrative team — narrative-director, writer, world-builder, level-designer — for story, world lore, narrative-driven levels.",
+      "summary": "narrative-director + writer + world-builder + level-designer",
+      "sections": [
+        "Phase 0: Resolve Config",
+        "Team Composition",
+        "How to Delegate",
+        "Pipeline",
+        "Error Recovery Protocol",
+        "File Write Protocol"
+      ]
+    },
+    {
+      "id": "team-polish",
+      "command": "/team-polish",
+      "category": "Team Orchestration",
+      "argumentHint": "[feature or area to polish] [--review full|lean|solo]",
+      "description": "Orchestrate the polish team — performance-analyst, technical-artist, sound-designer, qa-tester — to optimize and harden a feature or area.",
+      "summary": "performance-analyst + technical-artist + sound-designer + qa-tester",
+      "sections": [
+        "Phase 0: Resolve Config",
+        "Team Composition",
+        "How to Delegate",
+        "Pipeline",
+        "Error Recovery Protocol",
+        "File Write Protocol"
+      ]
+    },
+    {
+      "id": "team-qa",
+      "command": "/team-qa",
+      "category": "Team Orchestration",
+      "argumentHint": "[sprint | feature: system-name] [--review full|lean|solo]",
+      "description": "Orchestrate the QA team through a full testing cycle — qa-lead strategy and test plan, qa-tester case writing, execution, sign-off.",
+      "summary": "qa-lead + qa-tester + gameplay-programmer + producer",
+      "sections": [
+        "Phase 0: Resolve Config",
+        "Team Composition",
+        "How to Delegate",
+        "Pipeline",
+        "QA Sign-Off Report: [Sprint/Feature]",
+        "Error Recovery Protocol"
+      ]
+    },
+    {
+      "id": "team-release",
+      "command": "/team-release",
+      "category": "Team Orchestration",
+      "argumentHint": "[version number or 'next'] [--review full|lean|solo]",
+      "description": "Orchestrate the release team — release-manager, qa-lead, devops-engineer, producer — to execute a release from candidate to deployment.",
+      "summary": "release-manager + qa-lead + devops-engineer + producer",
+      "sections": [
+        "Phase 0: Resolve Config",
+        "Team Composition",
+        "How to Delegate",
+        "Pipeline",
+        "Error Recovery Protocol",
+        "File Write Protocol"
+      ]
+    },
+    {
+      "id": "team-ui",
+      "command": "/team-ui",
+      "category": "Team Orchestration",
+      "argumentHint": "[UI feature description] [--review full|lean|solo]",
+      "description": "Orchestrate the UI team through the UX pipeline — authoring, visual design, implementation, review, polish. Uses /ux-design, /ux-review, studio templates.",
+      "summary": "ux-designer + ui-programmer + art-director + accessibility-specialist",
+      "sections": [
+        "Phase 0: Resolve Config",
+        "Team Composition",
+        "How to Delegate",
+        "Pipeline",
+        "Quick Reference — When to Use Which Skill",
+        "Error Recovery Protocol"
+      ]
+    },
+    {
+      "id": "tech-debt",
+      "command": "/tech-debt",
+      "category": "Reviews & Analysis",
+      "argumentHint": "[scan|add|prioritize|report]",
+      "description": "Track, categorize and prioritize technical debt across the codebase — scans for debt indicators, maintains a register.",
+      "summary": "Scan, track, prioritize, and report on technical debt",
+      "sections": [
+        "Phase 1: Parse Subcommand",
+        "Phase 2A: Scan Mode",
+        "Phase 2B: Add Mode",
+        "Phase 2C: Prioritize Mode",
+        "Phase 2D: Report Mode",
+        "Phase 3: Next Steps"
+      ]
+    },
+    {
+      "id": "test-evidence-review",
+      "command": "/test-evidence-review",
+      "category": "QA & Testing",
+      "argumentHint": "[story-path | sprint | system-name]",
+      "description": "Quality review of test files and evidence — goes beyond existence, evaluates assertion coverage. ADEQUATE/INCOMPLETE/MISSING/NOT ASSESSED per story.",
+      "summary": "Quality review of test files and manual evidence documents",
+      "sections": [
+        "1. Parse Arguments",
+        "2. Load Stories in Scope",
+        "3. Locate Evidence Files",
+        "4. Review Automated Test Quality (Logic / Integration)",
+        "5. Review Manual Evidence Quality (Visual/Feel / UI)",
+        "6. Build the Review Report"
+      ]
+    },
+    {
+      "id": "test-flakiness",
+      "command": "/test-flakiness",
+      "category": "QA & Testing",
+      "argumentHint": "[ci-log-path | scan | registry]",
+      "description": "Find flaky tests from CI logs — aggregates pass rates, spots intermittent failures, recommends quarantine. After multiple runs.",
+      "summary": "Detect non-deterministic (flaky) tests from CI run logs",
+      "sections": [
+        "1. Parse Arguments",
+        "2. Locate CI Log Data",
+        "3. Parse Test Results",
+        "4. Identify Flaky Tests",
+        "5. Recommend Action",
+        "6. Generate Reports"
+      ]
+    },
+    {
+      "id": "test-helpers",
+      "command": "/test-helpers",
+      "category": "QA & Testing",
+      "argumentHint": "[system-name | all | scaffold]",
+      "description": "Generate engine-specific test helper libraries — assertion utilities, factory functions, mocks in the engine's test folder. Reduces boilerplate.",
+      "summary": "Generate engine-specific test helper libraries for the test suite",
+      "sections": [
+        "Assertions: use the project's test framework, never bare `assert()`",
+        "1. Parse Arguments",
+        "2. Detect Engine and Language",
+        "3. Load Existing Test Patterns",
+        "4. Generate Engine-Specific Helpers",
+        "Game-specific assertion utilities for [Project Name] tests."
+      ]
+    },
+    {
+      "id": "test-setup",
+      "command": "/test-setup",
+      "category": "QA & Testing",
+      "argumentHint": "[force]",
+      "description": "Sets up the test framework and CI: tests/ directory, engine runner, GitHub Actions workflow. Use once, before the first sprint.",
+      "summary": "Scaffold the test framework and CI/CD pipeline for the project's engine",
+      "sections": [
+        "Phase 1: Detect Engine and Existing State",
+        "Phase 2: Present Plan",
+        "Phase 3: Create Directory Structure",
+        "Phase 4: Create CI/CD Workflow",
+        "Phase 5: Create Smoke Test Seed",
+        "Phase 6: Post-Setup Summary"
+      ]
+    },
+    {
+      "id": "ux-design",
+      "command": "/ux-design",
+      "category": "UX & Interface Design",
+      "argumentHint": "[screen/flow name] or 'hud' or 'patterns' or 'accessibility'",
+      "description": "Section-by-section UX spec authoring for a screen, flow or HUD. Reads the player journey to provide context; also project-wide accessibility.",
+      "summary": "Guided section-by-section UX spec authoring (screen/flow, HUD, or pattern library)",
+      "sections": [
+        "1. Parse Arguments & Determine Mode",
+        "2. Gather Context (Read Phase)",
+        "3. Create File Skeleton",
+        "4. Section-by-Section Authoring",
+        "5. Cross-Reference Check",
+        "7. Recovery & Resume"
+      ]
+    },
+    {
+      "id": "ux-review",
+      "command": "/ux-review",
+      "category": "UX & Interface Design",
+      "argumentHint": "[file-path or 'all' or 'hud' or 'patterns']",
+      "description": "Validate a UX spec, HUD design or pattern library — accessibility, GDD alignment, readiness. APPROVED / NOT ASSESSED / NEEDS REVISION / MAJOR REVISION NEEDED.",
+      "summary": "Validate UX specs for GDD alignment, accessibility, and pattern compliance",
+      "sections": [
+        "Overview",
+        "Phase 1: Parse Arguments",
+        "Phase 2: Load Cross-Reference Context",
+        "Phase 3A: UX Spec Validation Checklist",
+        "Phase 3B: HUD Validation Checklist",
+        "Phase 3C: Pattern Library Validation Checklist"
+      ]
+    },
+    {
+      "id": "vertical-slice",
+      "command": "/vertical-slice",
+      "category": "Creative & Content",
+      "argumentHint": "[--review full|lean|solo]",
+      "description": "Pre-production validation — end-to-end build to confirm the full loop is achievable before committing to Production. After GDDs, architecture, UX specs.",
+      "summary": "Pre-Production validation — production-quality end-to-end build before committing to Production (Phase 4)",
+      "sections": [
+        "Purpose",
+        "Phase 1: Resolve Review Mode and Load Context",
+        "Phase 2: Define the Slice Scope and Validation Question",
+        "Phase 3: Plan the Build",
+        "Phase 4: Implement",
+        "Phase 5: Playtest Debrief"
+      ]
+    },
+    {
+      "id": "write-changelog",
+      "command": "/write-changelog",
+      "category": "Release",
+      "argumentHint": "[version|sprint-number]",
+      "description": "Writes a changelog from git commits and sprint data. Use for an internal or player-facing one.",
+      "summary": "Auto-generate changelog from git commits and sprint data",
+      "sections": [
+        "Recent History",
+        "Provenance check — before trusting the history above",
+        "Phase 1: Parse Arguments",
+        "Phase 2: Gather Change Data",
+        "Phase 3: Categorize Changes",
+        "Phase 4: Generate Internal Changelog"
+      ]
+    }
+  ],
+  "hooks": [
+    {
+      "id": "detect-gaps",
+      "file": "detect-gaps.sh",
+      "event": "SessionStart",
+      "trigger": "Session begins",
+      "action": "Detects fresh projects (suggests /start) and missing documentation when code/prototypes exist, suggests /reverse-document or /project-stage-detect",
+      "severity": "warning"
+    },
+    {
+      "id": "log-agent-stop",
+      "file": "log-agent-stop.sh",
+      "event": "SubagentStop",
+      "trigger": "Agent stops",
+      "action": "Audit trail stop — completes subagent record. Skips Claude Code's internal agents (prompt suggestions, `/btw`), which arrive with an empty `agent_type`",
+      "severity": "lifecycle"
+    },
+    {
+      "id": "log-agent",
+      "file": "log-agent.sh",
+      "event": "SubagentStart",
+      "trigger": "Agent spawned, resumed, or a teammate handles a new message",
+      "action": "Audit trail start — logs subagent invocation with timestamp and session id. SubagentStart fires for a resume and for each agent-team message too, so the spawn tally counts those",
+      "severity": "lifecycle"
+    },
+    {
+      "id": "log-instructions",
+      "file": "log-instructions.sh",
+      "event": "Observability",
+      "trigger": "Automatic",
+      "action": "--- work from the project root ---------------------------------------------- Every path below is repo-relative, so a hook invoked with a working directory that is not the repo root would silently write the WRONG TREE -- creating stray trees such as docs/production/session-logs/ on write.  PRECEDENCE IS LOAD-BEARING. A cwd that IS a project root carries real information and must win: a caller sitting inside another project means that project, not this one. Resolving to the script's own location first would",
+      "severity": "lifecycle"
+    },
+    {
+      "id": "notify",
+      "file": "notify.sh",
+      "event": "Notification (`permission_prompt`, `idle_prompt`)",
+      "trigger": "Claude is waiting on a permission prompt, or has been idle about a minute",
+      "action": "Shows Windows toast notification via PowerShell",
+      "severity": "lifecycle"
+    },
+    {
+      "id": "pre-compact",
+      "file": "pre-compact.sh",
+      "event": "PreCompact",
+      "trigger": "Context compression",
+      "action": "Appends one line to `production/session-logs/compaction-log.txt` and prints nothing: Claude Code does not add PreCompact output to the conversation. `session-start.sh`, which runs again after every compaction, is what restores context",
+      "severity": "lifecycle"
+    },
+    {
+      "id": "session-start",
+      "file": "session-start.sh",
+      "event": "SessionStart",
+      "trigger": "Session begins",
+      "action": "Loads sprint context, milestone, git activity; detects and previews active session state file for recovery, with one line when its checkpoint names a different branch from the one you are on; one line when a newer release is out, from a cache `update-check.sh` refreshes in the background at most once a day (`updates.check` in `effects-map.md`)",
+      "severity": "lifecycle"
+    },
+    {
+      "id": "session-stop",
+      "file": "session-stop.sh",
+      "event": "Stop, async",
+      "trigger": "**Every response ends** — not once per session",
+      "action": "Updates the session log and writes the subagent spawn tally to `production/session-logs/session-cost.md`; prints nothing. Archives `active.md` only when its content hash changed; without that guard a long session appended the whole file on every turn. Runs in the background, so the turn does not wait for it; under `claude -p` it is cancelled if still running when the session ends",
+      "severity": "lifecycle"
+    },
+    {
+      "id": "update-check",
+      "file": "update-check.sh",
+      "event": "Automation",
+      "trigger": "Automatic",
+      "action": "Hook helper: update-check.sh Purpose: one line at session start when a newer Claude Code Game Studios release is out. Sourced by session-start.sh; run directly as `bash update-check.sh refresh` or `notice` (to see the line by hand).  update_check_notice Prints the notice line when the cached latest release is newer than this framework, or nothing. Starts a background refresh when the cache is missing or a day old. Never touches the network itself and never waits.",
+      "severity": "lifecycle"
+    },
+    {
+      "id": "validate-agent-artifact",
+      "file": "validate-agent-artifact.sh",
+      "event": "SubagentStop",
+      "trigger": "A subagent stops",
+      "action": "Warns you, and never blocks, when the file its return contract named (\"Write your full output to `<path>`\") is not on disk, a failed phase however its reply reads. Shown to you only: on this event, text for Claude would keep the subagent running",
+      "severity": "warning"
+    },
+    {
+      "id": "validate-assets",
+      "file": "validate-assets.sh",
+      "event": "PostToolUse (Write/Edit)",
+      "trigger": "Asset file changes",
+      "action": "Checks data-file JSON under `assets/`, `Assets/` or `Content/`, and asset naming in Godot's `assets/` only",
+      "severity": "warning"
+    },
+    {
+      "id": "validate-commit",
+      "file": "validate-commit.sh",
+      "event": "PreToolUse (Bash, PowerShell)",
+      "trigger": "`git commit` commands",
+      "action": "Validates design doc sections, JSON data files, hardcoded values, TODO format",
+      "severity": "blocking"
+    },
+    {
+      "id": "validate-push",
+      "file": "validate-push.sh",
+      "event": "PreToolUse (Bash, PowerShell)",
+      "trigger": "`git push`, `git tag`, `git merge` and release commands",
+      "action": "Warns on pushes to protected branches (`main`, `master` and `release/*`), and on the steps that ask first: `git tag` (not a listing), `git merge` (not `--abort`), `gh release`, `butler push` and `steamcmd` with `+run_app_build`. Which commands count is `bash .claude/scripts/write-guard.sh git`",
+      "severity": "blocking"
+    },
+    {
+      "id": "validate-read",
+      "file": "validate-read.sh",
+      "event": "PreToolUse (Read)",
+      "trigger": "A Read with no offset and no limit under `design/`, `docs/architecture/` or `production/session-state/`",
+      "action": "Blocks a whole-file read of a doc over 40 KB (`features.read_guard_kb`) and answers with the doc's headings by line, so the retry reads one section; a ranged read always passes. `features.read_guard: off` turns it off. The check is `bash .claude/scripts/read-guard.sh check`",
+      "severity": "warning"
+    },
+    {
+      "id": "validate-registry",
+      "file": "validate-registry.sh",
+      "event": "PreToolUse (Write/Edit)",
+      "trigger": "Writes and edits of `design/registry/entities.yaml` and `docs/architecture/tr-registry.yaml`",
+      "action": "Warns, and never blocks, when the change would delete or renumber an entry or set a status outside the values the file's header lists. It runs before the write, while the old file can still be compared; the check itself is `bash .claude/scripts/registry.sh compare`. The skills that write a registry also run `registry.sh validate` after writing, because hooks do not run in every tool",
+      "severity": "warning"
+    },
+    {
+      "id": "validate-skill-change",
+      "file": "validate-skill-change.sh",
+      "event": "PostToolUse (Write/Edit)",
+      "trigger": "Skill file changes",
+      "action": "Advises running `/skill-test` after any `.claude/skills/` file is written or edited",
+      "severity": "warning"
+    },
+    {
+      "id": "validate-write",
+      "file": "validate-write.sh",
+      "event": "PreToolUse (Write/Edit)",
+      "trigger": "Writes and edits the rules below name",
+      "action": "Warns, and never blocks, when a write would replace a file skills never overwrite (an existing `EPIC.md`, `project.godot`, `tests/helpers/*`, the tech-debt register, an engine reference doc, the files `/test-setup` creates), set a config value outside its list or a key `project.local.yaml` cannot hold, set the review mode, leave a prototype file without its `PROTOTYPE` or `VERTICAL SLICE` header or reach between `prototypes/` and the code root, change a string table during an active freeze, or, from a subagent, write anything but a new file under `production/`, `docs/` or `tests/`. The check is `bash .claude/scripts/write-guard.sh check`, which the skills that write these files also run themselves",
+      "severity": "warning"
+    },
+    {
+      "id": "yaml-helper",
+      "file": "yaml-helper.sh",
+      "event": "Shared Utility",
+      "trigger": "Invoked by skills & hooks",
+      "action": "Hook helper: yaml-helper.sh Purpose: Shared YAML reading helper for CCGS hooks and skill orchestrators. Cross-platform: Windows Git Bash compatible.  Provides: get_yaml_key <file> <dotted.path> Prints the scalar value at <dotted.path> in <file>, or empty string if: - the file does not exist or is unreadable - the path does not exist in the YAML",
+      "severity": "lifecycle"
+    }
+  ],
+  "rules": [
+    {
+      "id": "agent-memory",
+      "file": "agent-memory.md",
+      "title": "Agent Memory Rules",
+      "paths": [
+        ".claude/agent-memory/**"
+      ],
+      "scope": "Path-Scoped",
+      "highlights": [
+        "**Appends to `production/session-state/active.md`** — the session checkpoint",
+        "**A subagent's new file at the path its orchestrating skill named.** Only a",
+        "**Prefer recording a method over a state.** \"Confirm an engine project and a",
+        "**If you must record a state, state what invalidates it**, on the same line:",
+        "**Never record absence of a game, of assets, of tests or of config as a"
+      ]
+    },
+    {
+      "id": "ai-code",
+      "file": "ai-code.md",
+      "title": "AI Code Rules",
+      "paths": [
+        "src/ai/**",
+        "Assets/**/{AI,Ai,ai}/**/*.cs",
+        "Source/**/{AI,Ai,ai}/**/*.{h,cpp}"
+      ],
+      "scope": "Path-Scoped",
+      "highlights": [
+        "AI update budget: 2ms per frame maximum — profile to verify",
+        "All AI parameters must be tunable from data files (behavior tree weights, perception ranges, timers)",
+        "AI must be debuggable: implement visualization hooks for all AI state (paths, perception cones, decision trees)",
+        "AI should telegraph intentions — players need time to read and react",
+        "Prefer utility-based or behavior tree approaches over hard-coded if/else chains"
+      ]
+    },
+    {
+      "id": "data-files",
+      "file": "data-files.md",
+      "title": "Data File Rules",
+      "paths": [
+        "assets/data/**/*.json",
+        "data/**/*.json",
+        "Assets/**/{Data,data}/**/*.json",
+        "Content/**/{Data,data}/**/*.json"
+      ],
+      "scope": "Path-Scoped",
+      "highlights": [
+        "All JSON files must be valid JSON — broken JSON blocks the entire build pipeline",
+        "File naming (Godot and Web data): lowercase with underscores only, following `[system]_[name].json` pattern.",
+        "Every data file must have a documented schema (either JSON Schema or documented in the corresponding design doc)",
+        "Numeric values must include comments or companion docs explaining what the numbers mean",
+        "Use consistent key naming: **`snake_case` for keys within JSON files**, matching"
+      ]
+    },
+    {
+      "id": "design-docs",
+      "file": "design-docs.md",
+      "title": "Design Document Rules",
+      "paths": [
+        "design/gdd/**"
+      ],
+      "scope": "Path-Scoped",
+      "highlights": [
+        "The 8 GDD sections are: Overview, Player Fantasy, Detailed Rules, Formulas, Edge Cases, Dependencies, Tuning Knobs, Acceptance Criteria",
+        "**How many are required depends on `modes.workflow`** — all 8 at `full`, 5 (+ Formulas when the system **defines numeric rules**: rates, curves, thresholds, costs, damage, drop weights — anything a balance pass would tune) at `standard`, none at `minimal` (the design record there is `design/game-brief.md`). Resolve the tier before flagging a section as missing; see `.claude/docs/workflow-modes.md`",
+        "**The Formulas test is what the system defines, not what it is called.** A system's `Category` in `systems-index.md` is a hint — `Gameplay`, `Economy` and `Progression` almost always qualify — never the test. Do not gate Formulas on a category token: the categories `/map-systems` writes (`Core · Gameplay · Progression · Economy · Persistence · UI · Audio · Narrative · Meta`) do not include `combat` or `AI`, which are example systems *within* `Gameplay`. Every site stating this rule must state the same test.",
+        "**Section-name alias**: The GDD template and `/design-system` author this section as `## Detailed Design`; the design standard calls it **Detailed Rules**. These are the SAME required section — accept either heading and never rewrite one into the other.",
+        "Formulas must include variable definitions, expected value ranges, and example calculations"
+      ]
+    },
+    {
+      "id": "engine-code",
+      "file": "engine-code.md",
+      "title": "Engine Code Rules",
+      "paths": [
+        "src/core/**",
+        "Assets/**/{Core,core}/**/*.cs",
+        "Source/**/{Core,core}/**/*.{h,cpp}"
+      ],
+      "scope": "Path-Scoped",
+      "highlights": [
+        "ZERO allocations in hot paths (update loops, rendering, physics) — pre-allocate, pool, reuse",
+        "All engine APIs must be thread-safe OR explicitly documented as single-thread-only",
+        "Profile before AND after every optimization — document the measured numbers",
+        "Engine code must NEVER depend on gameplay code (strict dependency direction: engine <- gameplay)",
+        "Every public API must have usage examples in its doc comment"
+      ]
+    },
+    {
+      "id": "gameplay-code",
+      "file": "gameplay-code.md",
+      "title": "Gameplay Code Rules",
+      "paths": [
+        "src/gameplay/**",
+        "src/game/**",
+        "Assets/**/{Gameplay,gameplay}/**/*.cs",
+        "Source/**/{Gameplay,gameplay}/**/*.{h,cpp}"
+      ],
+      "scope": "Path-Scoped",
+      "highlights": [
+        "ALL gameplay values MUST come from external config/data files, NEVER hardcoded",
+        "Use delta time for ALL time-dependent calculations (frame-rate independence)",
+        "NO direct references to UI code — use events for cross-system communication",
+        "Every gameplay system must implement a clear interface",
+        "State machines must have explicit transition tables with documented states"
+      ]
+    },
+    {
+      "id": "narrative",
+      "file": "narrative.md",
+      "title": "Narrative Rules",
+      "paths": [
+        "design/narrative/**"
+      ],
+      "scope": "Path-Scoped",
+      "highlights": [
+        "All new lore must be cross-referenced against existing lore for contradictions",
+        "Every lore entry must specify canon level: Established / Provisional / Under Review",
+        "Character dialogue must match the voice profile defined for that character",
+        "World rules (what is possible/impossible) must be explicitly documented and consistent",
+        "Mysteries must have documented \"true answers\" even if players never learn them"
+      ]
+    },
+    {
+      "id": "network-code",
+      "file": "network-code.md",
+      "title": "Network Code Rules",
+      "paths": [
+        "src/networking/**",
+        "Assets/**/{Networking,networking,Network,network}/**/*.cs",
+        "Source/**/{Networking,networking,Network,network}/**/*.{h,cpp}"
+      ],
+      "scope": "Path-Scoped",
+      "highlights": [
+        "Server is AUTHORITATIVE for all gameplay-critical state — never trust the client",
+        "All network messages must be versioned for forward/backward compatibility",
+        "Client predicts locally, reconciles with server — implement rollback for mispredictions",
+        "Handle disconnection, reconnection, and host migration gracefully",
+        "Rate-limit all network logging to prevent log flooding"
+      ]
+    },
+    {
+      "id": "prototype-code",
+      "file": "prototype-code.md",
+      "title": "Prototype Code Standards",
+      "paths": [
+        "prototypes/**"
+      ],
+      "scope": "Path-Scoped",
+      "highlights": [
+        "Each prototype lives in its own subdirectory: `prototypes/[name]/`",
+        "Each file that can hold a comment starts with the PROTOTYPE - NOT FOR PRODUCTION header",
+        "No production code may reference or import from `prototypes/`",
+        "An engine or paper prototype must not modify files outside `prototypes/`, and is never",
+        "A one-shot may also write `design/game-brief.md` and save pasted images to `references/`;"
+      ]
+    },
+    {
+      "id": "scene-files",
+      "file": "scene-files.md",
+      "title": "Scene and Asset File Rules",
+      "paths": [
+        "**/*.tscn",
+        "**/*.tres",
+        "**/*.unity",
+        "**/*.prefab",
+        "Assets/**/*.asset"
+      ],
+      "scope": "Path-Scoped",
+      "highlights": [
+        "Never change the `format=` value in the `[gd_scene]` or `[gd_resource]` header.",
+        "Never reuse an `id`: every `[ext_resource]` and `[sub_resource]` id is unique in its file.",
+        "Never copy a node block with its `unique_id=` (Godot 4.6+). Drop it from the copy.",
+        "Never invent a `uid://` value. Leave `uid=` off a new reference and let the",
+        "Never hand-edit TileMapLayer or GridMap cell data. It is encoded, so change it in the editor."
+      ]
+    },
+    {
+      "id": "shader-code",
+      "file": "shader-code.md",
+      "title": "Shader Code Standards",
+      "paths": [
+        "assets/shaders/**",
+        "**/*.gdshader",
+        "Assets/**/*.{shader,hlsl,cginc,compute,shadergraph}",
+        "Shaders/**",
+        "**/*.{usf,ush}"
+      ],
+      "scope": "Path-Scoped",
+      "highlights": [
+        "File naming: `[type]_[category]_[name].[ext]`",
+        "`spatial_env_water.gdshader` (Godot)",
+        "`SG_Env_Water` (Unity Shader Graph)",
+        "`M_Env_Water` (Unreal Material)",
+        "Use descriptive names that indicate the material purpose"
+      ]
+    },
+    {
+      "id": "skill-authoring",
+      "file": "skill-authoring.md",
+      "title": "Skill and Gate Authoring",
+      "paths": [
+        ".claude/skills/**",
+        ".claude/agents/**"
+      ],
+      "scope": "Path-Scoped",
+      "highlights": [
+        "**Assert something that cannot be true by accident.** A check for the word",
+        "**A gate you have not watched fail is not a gate.** Break the thing it guards,"
+      ]
+    },
+    {
+      "id": "test-standards",
+      "file": "test-standards.md",
+      "title": "Test Standards",
+      "paths": [
+        "tests/**",
+        "Assets/Tests/**/*.cs",
+        "Source/**/Tests/**/*.{h,cpp}"
+      ],
+      "scope": "Path-Scoped",
+      "highlights": [
+        "Test naming follows the engine's language — every name says the scenario and",
+        "**Godot (gdUnit4):** file `[system]_[feature]_test.gd`, function",
+        "**Unity (NUnit):** class `[System]Tests` in a file of the same name, method",
+        "**Unreal (Automation):** class `F[System][Scenario]Test` — one per test:",
+        "**Web (Vitest, Playwright):** file `[module].test.ts` under `tests/unit/`"
+      ]
+    },
+    {
+      "id": "ui-code",
+      "file": "ui-code.md",
+      "title": "UI Code Rules",
+      "paths": [
+        "src/ui/**",
+        "Assets/**/{UI,Ui,ui}/**/*.cs",
+        "Source/**/{UI,Ui,ui}/**/*.{h,cpp}"
+      ],
+      "scope": "Path-Scoped",
+      "highlights": [
+        "UI must NEVER own or directly modify game state — display only, use commands/events to request changes",
+        "All UI text must go through the localization system — no hardcoded user-facing strings",
+        "Support both keyboard/mouse AND gamepad input for all interactive elements",
+        "All animations must be skippable and respect user motion/accessibility preferences",
+        "UI sounds trigger through the audio event system, not directly"
+      ]
+    }
+  ],
+  "engines": [
+    {
+      "engine": "Godot",
+      "code_root": "src",
+      "test_root": "tests",
+      "asset_root": "assets",
+      "run": "godot --path . --windowed --resolution 1280x720",
+      "build": "-",
+      "test": "godot --headless -s -d --remote-debug tcp://127.0.0.1:0 res://addons/gdUnit4/bin/GdUnitCmdTool.gd -a res://tests --ignoreHeadlessMode",
+      "smoke": "godot --headless --quit-after 5"
+    },
+    {
+      "engine": "Unity",
+      "code_root": "Assets",
+      "test_root": "Assets/Tests",
+      "asset_root": "Assets",
+      "run": "-",
+      "build": "-",
+      "test": "-",
+      "smoke": "-"
+    },
+    {
+      "engine": "Unreal",
+      "code_root": "Source",
+      "test_root": "Source/<Module>/Private/Tests",
+      "asset_root": "Content",
+      "run": "-",
+      "build": "-",
+      "test": "-",
+      "smoke": "-"
+    },
+    {
+      "engine": "Web",
+      "code_root": "src",
+      "test_root": "tests",
+      "asset_root": "assets",
+      "run": "npm run dev",
+      "build": "npm run build",
+      "test": "npm test",
+      "smoke": "npm run smoke"
+    }
+  ]
+}

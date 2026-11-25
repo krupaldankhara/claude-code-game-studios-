@@ -1,0 +1,6 @@
+{
+  "name": "Claude Code Game Studios",
+  "description": "Interactive game development studio workbench powered by 49 AI agents, 78 workflow skills, 18 governance hooks, and 14 path-scoped rules across Web, Godot, Unity, and Unreal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
